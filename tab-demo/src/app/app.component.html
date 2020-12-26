@@ -1,3 +1,19 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
+<ion-app>  
+  <ion-menu side="start">
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-title>Custom Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item routerLink="/home/tabs/tab-one">Menu Item</ion-item>
+        <ion-item routerLink="/home/tabs/tab-two">Menu Item</ion-item>
+        <ion-item>Menu Item</ion-item>
+        <ion-item>Menu Item</ion-item>
+        <ion-item>Menu Item</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet main></ion-router-outlet>
 </ion-app>
